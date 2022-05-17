@@ -5,4 +5,7 @@ NAME = ex02.exe
 all: build
 
 build: 
-	${CC} -o ${NAME} ${FILE}
+	${CC} -o ${NAME} ${FILE} -lpthread
+
+clean:
+	rm -f ${NAME}
